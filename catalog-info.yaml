@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-node-api
+  description: Sample Node.js product catalog API — demo for Meridian EA governance
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    # Meridian EA annotations
+    meridian.io/domain: Commerce
+    meridian.io/service-id: sample-node-api
+    # This annotation marks the service as EA-compliant for the OpenAPI spec policy (POL-API-001).
+    # Replace YOUR_GITHUB_USERNAME with your actual GitHub username.
+    meridian.io/openapi-spec: 'https://github.com/balasp88/sample-node-api/blob/main/openapi.yaml'
+  tags:
+    - nodejs
+    - rest
+    - products
+    - javascript
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:guest
+  system: commerce-platform
