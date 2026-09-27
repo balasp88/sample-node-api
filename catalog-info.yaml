@@ -10,7 +10,6 @@ metadata:
     meridian.io/service-id: sample-node-api
     # This annotation marks the service as EA-compliant for the OpenAPI spec policy (POL-API-001).
     # Replace YOUR_GITHUB_USERNAME with your actual GitHub username.
-    meridian.io/openapi-spec: 'https://github.com/balasp88/sample-node-api/blob/main/openapi.yaml'
   tags:
     - nodejs
     - rest
